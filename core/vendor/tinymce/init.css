@@ -1,6 +1,9 @@
 /**
  * Personnalisation de TinyMCE aux couleurs de Zwii
  */
+.mce-container {
+	background: #FFF !important;
+}
 .mce-panel {
 	border: 0 !important;
 }
