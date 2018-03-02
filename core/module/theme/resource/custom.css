@@ -17,6 +17,8 @@ body {
 
 /* Bannière */
 header {
+background-size: contain;
+margin-top: 20px !important;   
 }
 
 /* Titre de la bannière */
