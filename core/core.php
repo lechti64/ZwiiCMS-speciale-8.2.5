@@ -1836,7 +1836,11 @@ class layout extends common {
 					}
 				}
 				$leftItems .= '</select></li>';
-				$leftItems .= '<li><a href="' . helper::baseUrl() . 'page/add" title="Créer une page">' . template::ico('plus') . '</a></li>';
+			}
+			// Items de droite
+			$rightItems = '';
+			if($this->getUser('group') >= self::GROUP_MODERATOR) {
+				$rightItems .= '<li><a href="' . helper::baseUrl() . 'page/add" title="Créer une page">' . template::ico('plus') . '</a></li>';
 				if(
 					// Sur un module de page qui autorise le bouton de modification de la page
 					$this->core->output['showBarEditButton']
@@ -1845,13 +1849,8 @@ class layout extends common {
 					// Sur une page d'accueil
 					OR $this->getUrl(0) === ''
 				) {
-					$leftItems .= '<li><a href="' . helper::baseUrl() . 'page/edit/' . $this->getUrl(0) . '" title="Modifier la page">' . template::ico('pencil') . '</a></li>';
+					$rightItems .= '<li><a href="' . helper::baseUrl() . 'page/edit/' . $this->getUrl(0) . '" title="Modifier la page">' . template::ico('pencil') . '</a></li>';
 				}
-			}
-			// Items de droite
-			$rightItems = '';
-			if($this->getUser('group') >= self::GROUP_MODERATOR) {
-
 				$rightItems .= '<li><a href="' . helper::baseUrl(false) . 'core/vendor/filemanager/dialog.php?type=0&akey=' . md5_file('site/data/data.json') .'" title="Gérer les fichiers" data-lity>' . template::ico('folder') . '</a></li>';
 			}
 			if($this->getUser('group') >= self::GROUP_ADMIN) {
