@@ -174,7 +174,7 @@ class config extends common {
 					'cookieConsent' => $this->getInput('configCookieConsent', helper::FILTER_BOOLEAN),
 					'favicon' => $this->getInput('configFavicon'),
 					'homePageId' => $this->getInput('configHomePageId', helper::FILTER_ID, true),
-					'metaDescription' => $this->getInput('configMetaDescription', helper::FILTER_STRING_LONG, true),
+					'metaDescription' => $this->getInput('configMetaDescription', helper::FILTER_STRING_LONG, false),
 					'social' => [
 						'facebookId' => $this->getInput('configSocialFacebookId'),
 						'googleplusId' => $this->getInput('configSocialGoogleplusId'),
@@ -184,7 +184,7 @@ class config extends common {
 						'youtubeId' => $this->getInput('configSocialYoutubeId')
 					],
 					'timezone' => $this->getInput('configTimezone', helper::FILTER_STRING_SHORT, true),
-					'title' => $this->getInput('configTitle', helper::FILTER_STRING_SHORT, true)
+					'title' => $this->getInput('configTitle', helper::FILTER_STRING_SHORT, false)
 				]
 			]);
 			if(self::$inputNotices === []) {
