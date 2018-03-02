@@ -7,9 +7,9 @@ tinymce.init({
 	// Langue
 	language: "fr_FR",
 	// Plugins
-	plugins: "advlist anchor autolink autoresize autosave code colorpicker contextmenu fullscreen hr image imagetools link lists media paste searchreplace stickytoolbar tabfocus table template textcolor",
+	plugins: "advlist anchor autolink autoresize autosave charmap code colorpicker contextmenu fullscreen emoticons hr image imagetools link lists media paste preview searchreplace stickytoolbar tabfocus table template textcolor",
 	// Contenu de la barre d'outils
-	toolbar: "restoredraft | undo redo | styleselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist | insert | code fullscreen",
+	toolbar: "restoredraft | undo redo | bold italic underline strikethrough forecolor backcolor fontselect fontsizeselect | alignleft aligncenter alignright alignjustify subscript superscript | bullist numlist outdent indent | link image media hr emoticons charmap | searchreplace code fullscreen preview",
 	// Contenu du menu contextuel
 	contextmenu: "cut copy paste pastetext | selectall searchreplace",
 	// Fichiers CSS à intégrer à l'éditeur
@@ -22,7 +22,7 @@ tinymce.init({
 	// Classe à ajouter à la balise body dans l'iframe
 	body_class: "editorWysiwyg",
 	// Cache les menus
-	menubar: false,
+	menubar: true,
 	// Cache la barre de statut
 	statusbar: false,
 	// Autorise l'ajout de script
