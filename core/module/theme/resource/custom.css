@@ -26,6 +26,9 @@ header span {
 }
 
 /* Menu */
+nav li ul {
+background-color: #ECEFF1;  
+}
 nav {
 }
 
