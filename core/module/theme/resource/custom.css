@@ -6,9 +6,31 @@
 /**
  * Éléments principaux
  */
+/* Code blocks pour les codes à afficher */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
 
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+background-color: #f5f2f0;
+    padding: 5px;
+    border: 1px solid;
+}
 /* Fond du site */
 body {
+}
+
+/* barre administrative */
+#bar {
+    position: fixed;
+    width: 100%;
+margin-top: -20px;
+}
+[class*=" zwiico-"]::before, [class^="zwiico-"]::before {
+color: beige;  
 }
 
 /* Site */
@@ -26,8 +48,11 @@ header span {
 }
 
 /* Menu */
+nav li ul a {
+color: blue; 
+}
 nav li ul {
-background-color: #ECEFF1;  
+background-color: rgba(255, 255, 255, 0.45); 
 }
 nav {
 }
@@ -38,10 +63,12 @@ nav a {
 
 /* Items au survol du menu */
 nav a:hover {
+color: blue;
 }
 
 /* Item courant du menu */
 nav a.active {
+color: blue;
 }
 
 /* Bas de page */
