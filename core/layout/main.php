@@ -14,7 +14,6 @@
 </head>
 <body>
 <?php $layout->showStyle(); ?>
-<?php $layout->showBar(); ?>
 <?php $layout->showNotification(); ?>
 <?php if($this->getData(['theme', 'menu', 'position']) === 'body-first'): ?>
 	<!-- Menu dans le fond du site avant la bannière -->
@@ -28,6 +27,7 @@
 <?php if($this->getData(['theme', 'header', 'position']) === 'body'): ?>
 	<!-- Bannière dans le fond du site -->
 	<header>
+<div><?php $layout->showBar(); ?></div>
 		<?php if(
 			$this->getData(['theme', 'header', 'textHide']) === false
 			// Affiche toujours le titre de la bannière pour l'édition du thème
