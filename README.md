@@ -1,6 +1,6 @@
-# Zwii 8
+# ZwiiCMS-speciale-8.2.5
 
-Zwii est un CMS sans base de données (Flat-File) qui permet à ses utilisateurs de créer et gérer facilement un site web sans aucune connaissance en programmation.
+ZwiiCMS-speciale-8.2.5 est basée sur le cms Zwii sans base de données (Flat-File) qui permet à ses utilisateurs de créer et gérer facilement un site web sans aucune connaissance en programmation.
 
 [Site](http://zwiicms.com/) - [Forum](http://forum.zwiicms.com/) - [GitHub](https://github.com/remijean/ZwiiCMS/)
 
@@ -11,7 +11,7 @@ Zwii est un CMS sans base de données (Flat-File) qui permet à ses utilisateurs
 
 ## Installation
 
-Décompressez l'archive de Zwii sur votre serveur et c'est tout !
+Décompressez l'archive de ZwiiCMS-speciale-8.2.5 sur votre serveur et c'est tout !
 
 ## Procédure de mise à jour de Zwii
 
