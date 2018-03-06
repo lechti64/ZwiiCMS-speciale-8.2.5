@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>ZwiiCMS-speciale-8.2.5</title>
+	<meta name="description" content="ZwiiCMS-speciale-8.2.5 est basée sur le cms Zwii sans base de données (Flat-File) qui permet à ses utilisateurs de créer et gérer facilement un site web sans aucune connaissance en programmation.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="https://zwiicms.com/public/image/favicon.ico">
+	<link rel="stylesheet" href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/normalize.css">
+	<link rel="stylesheet" href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/zwiico.css">
+	<link rel="stylesheet" href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/style.css">
+<style>.password-toggler-button-parent {position: relative; overflow: visible;} .password-toggler-button {top: 50%; right: 8px; position: absolute; cursor: pointer; transform: translateY(-50%); background-size: cover; z-index: 9999999; background: #dcdcdc; border-radius: 100%; background-repeat: no-repeat; background-position: center center; box-sizing: border-box;} .password-toggler-show {background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4KPHBhdGggZmlsbD0iIzc1NzU3NSIgZD0iTTcgMi42MjVjLTMuMDUzIDAtNS43IDEuNzc4LTcgNC4zNzUgMS4zIDIuNTk3IDMuOTQ3IDQuMzc1IDcgNC4zNzVzNS42OTktMS43NzggNy00LjM3NWMtMS4zLTIuNTk3LTMuOTQ3LTQuMzc1LTctNC4zNzV6TTEwLjQ1MSA0Ljk0NWMwLjgyMyAwLjUyNSAxLjUyIDEuMjI3IDIuMDQzIDIuMDU1LTAuNTI0IDAuODI3LTEuMjIxIDEuNTMtMi4wNDMgMi4wNTUtMS4wMzQgMC42NTktMi4yMjcgMS4wMDgtMy40NTEgMS4wMDhzLTIuNDE4LTAuMzQ4LTMuNDUxLTEuMDA4Yy0wLjgyMi0wLjUyNS0xLjUxOS0xLjIyNy0yLjA0My0yLjA1NSAwLjUyNC0wLjgyNyAxLjIyMS0xLjUzIDIuMDQzLTIuMDU1IDAuMDU0LTAuMDM0IDAuMTA4LTAuMDY3IDAuMTYyLTAuMS0wLjEzNiAwLjM3NC0wLjIxMSAwLjc3Ny0wLjIxMSAxLjE5OCAwIDEuOTMzIDEuNTY3IDMuNSAzLjUgMy41czMuNS0xLjU2NyAzLjUtMy41YzAtMC40MjEtMC4wNzUtMC44MjQtMC4yMTEtMS4xOTggMC4wNTQgMC4wMzMgMC4xMDkgMC4wNjYgMC4xNjIgMC4xdjB6TTcgNS42ODhjMCAwLjcyNS0wLjU4OCAxLjMxMy0xLjMxMyAxLjMxM3MtMS4zMTMtMC41ODgtMS4zMTMtMS4zMTMgMC41ODgtMS4zMTMgMS4zMTMtMS4zMTMgMS4zMTMgMC41ODggMS4zMTMgMS4zMTN6Ij48L3BhdGg+Cjwvc3ZnPgo=);} .password-toggler-hide {background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4KPHBhdGggZmlsbD0iIzc1NzU3NSIgZD0iTTEyLjkzMyAwLjE5MmMtMC4yNTYtMC4yNTYtMC42NzItMC4yNTYtMC45MjggMGwtMi43NjQgMi43NjRjLTAuNzEtMC4yMTUtMS40NjItMC4zMzEtMi4yNDEtMC4zMzEtMy4wNTMgMC01LjcgMS43NzgtNyA0LjM3NSAwLjU2MiAxLjEyMyAxLjM3NiAyLjA5MiAyLjM2NiAyLjgzMWwtMi4xNzMgMi4xNzNjLTAuMjU2IDAuMjU2LTAuMjU2IDAuNjcyIDAgMC45MjggMC4xMjggMC4xMjggMC4yOTYgMC4xOTIgMC40NjQgMC4xOTJzMC4zMzYtMC4wNjQgMC40NjQtMC4xOTJsMTEuODEzLTExLjgxM2MwLjI1Ni0wLjI1NiAwLjI1Ni0wLjY3MiAwLTAuOTI4ek01LjY4OCA0LjM3NWMwLjU3OCAwIDEuMDY4IDAuMzczIDEuMjQzIDAuODkxbC0xLjY2NCAxLjY2NGMtMC41MTgtMC4xNzYtMC44OTEtMC42NjYtMC44OTEtMS4yNDMgMC0wLjcyNSAwLjU4OC0xLjMxMyAxLjMxMy0xLjMxM3pNMS41MDUgN2MwLjUyNC0wLjgyNyAxLjIyMS0xLjUzIDIuMDQzLTIuMDU1IDAuMDU0LTAuMDM0IDAuMTA4LTAuMDY3IDAuMTYyLTAuMS0wLjEzNiAwLjM3NC0wLjIxMSAwLjc3Ny0wLjIxMSAxLjE5OCAwIDAuNzUgMC4yMzYgMS40NDYgMC42MzggMi4wMTVsLTAuODMzIDAuODMzYy0wLjcxNy0wLjUwNC0xLjMyOS0xLjE0Ny0xLjgtMS44OTF6Ij48L3BhdGg+CjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Ik0xMC41IDYuMDQzYzAtMC4zNzEtMC4wNTgtMC43MjktMC4xNjUtMS4wNjVsLTQuNCA0LjRjMC4zMzYgMC4xMDcgMC42OTQgMC4xNjUgMS4wNjUgMC4xNjUgMS45MzMgMCAzLjUtMS41NjcgMy41LTMuNXoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzc1NzU3NSIgZD0iTTExLjM0OCAzLjk2NGwtMC45NDggMC45NDhjMC4wMTcgMC4wMTEgMC4wMzUgMC4wMjEgMC4wNTIgMC4wMzIgMC44MjMgMC41MjUgMS41MiAxLjIyNyAyLjA0MyAyLjA1NS0wLjUyNCAwLjgyNy0xLjIyMSAxLjUzLTIuMDQzIDIuMDU1LTEuMDM0IDAuNjU5LTIuMjI3IDEuMDA4LTMuNDUxIDEuMDA4LTAuNTI5IDAtMS4wNTEtMC4wNjUtMS41NTgtMC4xOTJsLTEuMDUxIDEuMDUxYzAuODE2IDAuMjkzIDEuNjk1IDAuNDUzIDIuNjA5IDAuNDUzIDMuMDUzIDAgNS42OTktMS43NzggNy00LjM3NS0wLjYxNi0xLjIyOS0xLjUzMy0yLjI3NS0yLjY1Mi0zLjAzNnoiPjwvcGF0aD4KPC9zdmc+Cg==);}</style></head>
+<body>
+<div id="cover">
+	<div class="inner">
+		<div class="speech">
+			<!--
+			--><h1 class="speechBubble">ZwiiCMS-speciale-8.2.5</h1>
+		</div>
+		<p>ZwiiCMS-speciale-8.2.5 est basée sur le cms Zwii sans base de données (Flat-File) qui permet à ses utilisateurs de créer et gérer facilement un site web sans aucune connaissance en programmation.</p>
+		<div id="get">
+<!--
+			--><a href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/archive/dev.zip" id="downloadStable" onclick="ga('send', 'event', 'Téléchargement');">
+				ZwiiCMS-speciale-8.2.5<small> du 22/02/2018</small>
+			</a><!--
+			--><a href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5" title="ZwiiCMS-speciale-8.2.5" target="_blank">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/github.png" alt="GitHub" width="64" height="64">
+			</a>
+
+			<a href="http://forum.zwiicms.com/" onclick="ga('send', 'event', 'Forum');">
+				Support du cms officiel
+			</a>
+		</div>
+		<a href="#why" id="go">
+			<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/arrow.png" alt="Pourquoi choisir Zwii ?" width="32" height="32">
+		</a>
+	</div>
+</div>
+<div id="container">
+	<div class="inner">
+		<h1 id="why">ZwiiCMS-speciale-8.2.5 pourquoi ?</h1>
+		<div class="row">
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/rocket.png" alt="Simple et complet" width="64" height="64">
+				<h2>Simple et complet</h2>
+				<p>À l'aide de son interface complète et simple d'utilisation créer et maintenir votre site web devient un jeu d'enfant !</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/x.png" alt="Sans base de données" width="64" height="64">
+				<h2>Sans base de données</h2>
+				<p>Ne demande aucune base de données SQL, le contenu de votre site tient dans un seul fichier JSON.</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/art.png" alt="À votre image" width="64" height="64">
+				<h2>À votre image</h2>
+				<p>Personnalisez les couleurs, les images, la disposition des élements et autres effets depuis une interface dédiée !</p>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/profile.png" alt="Multi-utilisateurs" width="64" height="64">
+				<h2>Multi-utilisateurs</h2>
+				<p>Créez vos utilisateurs puis classez les dans des groupes afin de 
+restreindre ou non leur accès aux pages et aux autres fonctionnalités.</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/folder.png" alt="Gestionnaire de fichiers" width="64" height="64">
+				<h2>Gestionnaire de fichiers</h2>
+				<p>Gérez vos fichiers ultra simplement depuis un gestionnaire de fichiers complet et moderne !</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/tools.png" alt="Modulable" width="64" height="64">
+				<h2>Modulable</h2>
+				<p>De nombreux modules à utiliser en fonction de vos besoins : création de formulaire, news, galerie photos, etc.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/compose.png" alt="Éditeur de texte" width="64" height="64">
+				<h2>Éditeur de texte</h2>
+				<p>L'éditeur de texte WYSIWYG vous permettra une mise en page simple et efficace sans aucune connaissance en programmation !</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/tablet.png" alt="Template responsive" width="64" height="64">
+				<h2>100% responsive</h2>
+				<p>Repose sur une structure de template moderne compatible PC, tablette et smartphone en même temps !</p>
+			</div>
+			<div class="col-4">
+				<img src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/assets/css/unlocked.png" alt="Open source" width="64" height="64">
+				<h2>Open source</h2>
+				<p>Complètement gratuit et open source, distribué sous <a href="https://zwiicms.com/LICENSE.txt" onclick="ga('send', 'event', 'Licence');">licence GNU GPL v3</a>.</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">Version spéciale développée avec par <a href="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5" target="_blank">lechti64</a> depuis Février 2018.
+<br><br>Développé par <a href="http://remijean.fr/" target="_blank">Rémi Jean</a> depuis 2008 pour le cms original.</div>
+</div>
+
+<script src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/js/jquery.js"></script>
+<script src="https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/tree/master/js/script.js"></script>
+
+</body></html>
