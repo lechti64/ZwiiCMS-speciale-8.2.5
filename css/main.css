@@ -225,7 +225,8 @@ img {
   display: block;
   padding: 10px;
   padding-left: 30px;
-  background-color: {{ site.navbar-children-col }};
+  background-color: #6F6F6F;
+  border-color: #303030 !important;
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
