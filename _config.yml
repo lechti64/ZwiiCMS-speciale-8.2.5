@@ -14,8 +14,7 @@ baseurl: "/ZwiiCMS-speciale-8.2.5"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Mon Site
-
+title: ZwiiCMS-speciale-8.2.5
 # Short description of your site
 description: A virtual proof that name is awesome!
 
@@ -23,7 +22,7 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  Accueil: ""
+  Accueil: "https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/"
   Resources:
     - Getting started: "getstarted"
     - Featured users: "featured-users"
