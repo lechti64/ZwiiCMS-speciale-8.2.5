@@ -22,7 +22,7 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  Accueil: "https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/"
+  Accueil: "https://lechti64.github.io/ZwiiCMS-speciale-8.2.5/"
   Resources:
     - Voir la version sur github: "https://github.com/lechti64/ZwiiCMS-speciale-8.2.5"
     - Téléchargement: "https://github.com/lechti64/ZwiiCMS-speciale-8.2.5/archive/dev.zip"
