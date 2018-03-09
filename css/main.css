@@ -266,7 +266,7 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  background-color: {{ site.footer-col }};
+  background-color: #626262;
   {% if site.footer-img %}
   background-image: url({{ site.footer-img }});
   background-attachment: fixed;
@@ -274,11 +274,11 @@ footer {
 }
 
 footer p.text-muted {
-  color: {{ site.footer-text-col }};
+  color: #bfbfbf;
 }
 
 footer a {
-  color: {{site.footer-link-col}};
+  color: #9e9e9e;Updap
 }
 
 footer .list-inline {
