@@ -33,7 +33,7 @@ ZwiiCMS-speciale-8.2.5 vous propose de nouveaux petits plus...
 
 Un petit aperçu?
 
-!(http://forum.zwiicms.com/uploads/monthly_2018_02/2.png.8c8339a2cadbe18147c42cb0bde685a5.png)
+![zwii spéciale](http://forum.zwiicms.com/uploads/monthly_2018_02/2.png.8c8339a2cadbe18147c42cb0bde685a5.png  "zwii spéciale")
 
 Here's a code chunk:
 
